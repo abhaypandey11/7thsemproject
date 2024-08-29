@@ -1,0 +1,57 @@
+body {
+    background-color: #0D1117;
+    /* height: 726px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative; */
+    /* background-color: #222; */
+    margin: 0;
+    padding: 0;
+  }
+
+  .profile-container {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .profile-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    margin: 10px 9px;
+
+  }
+
+  .profile-container a {
+    font-weight: 25px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .profile-container a:hover {
+    color: rgb(109, 109, 245);
+    text-decoration: underline;
+  }
+  .raju{
+    height: 80vh;
+    padding: 200px;
+  }
+
+  .pose {
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+.timi{
+
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+.timi a{
+color: white;
+
+}

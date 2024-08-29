@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primer-color: #2b17c546;
+    --text-color: white;
+    --secondary-color: #181b20;
+    --common-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    ;
+}
+
+body {
+    color: rgb(188, 59, 59);
+    background-color: #0D1117;
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, sans-serif; */
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #161A22;
+    padding: 10px 20px;
+    /* justify-content: space-between; */
+}
+
+.box-item1 {
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.box-item1 span{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Anton", sans-serif;
+}
+.box-item1 img {
+    height: 40px;
+    margin: 0px 10px;
+    border-radius: 15px;
+}
+
+.box-item2 {
+    flex-grow: 1;
+}
+
+.box-item2 ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 10px;
+}
+
+
+.box-item2 ul li {
+    display: inline;
+    margin: 0px 10px;
+}
+
+.box-item2 ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.box-item2 ul li a:hover {
+    color: gray;
+    /* background-color: white; */
+   
+}
+
+.box-item3 {
+    margin-left: 20px;
+
+}
+
+.box-item3 input {
+    background-color: rgb(48, 46, 46);
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(243, 228, 228);
+    font-size: 16px;
+    border: 1px solid #0e0d0d;
+    border-radius: 55px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box-item1[input] {
+    color: aliceblue;
+
+}
+
+.box-item4 {
+    margin-left: 20px;
+}
+
+.box-item4 img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.head {
+    font-family: "Nerko One", cursive;
+    text-align: center;
+    color: #F0FFFF;
+    font-weight: 500;
+    font-size: 35px;
+    margin-top: 5px;
+}
+
+.head2 img {
+    width: 30px;
+    margin-left: 15px;
+
+}
+
+.head2 h1 {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+
+}
+
+.head3 ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 25px 10px 0px;
+
+}
+
+.head3 ul li a {
+    color: rgb(188, 59, 59);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+.head3 img {
+    width: 25px;
+    margin: 0px 0px;
+}
+
+.text1 {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 800px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.text1 input[type="text"] {
+    background-color: #444;
+    color: #eee;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.code-container{
+    border: 2px solid white;
+    
+}
+
+
+.line-numbers {
+    background-color: #333;
+    color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 300px;
+    overflow-y: hidden;
+    /* Add scroll effect to line numbers */
+    display: flex;
+    font-family: monospace;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Align line numbers to the top */
+    text-align: right;
+}
+
+textarea {
+    background-color: #444;
+    color: #eee;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: monospace;
+    width: 100%;
+    height: 300px;
+    /* resize: vertical; */
+    /* overflow-y: auto;
+    border: transparent; */
+    /* Add scroll effect to textarea*/
+}
+
+.text1 button {
+    /* display: flex; */
+
+    /* width: 117px; */
+    color: #0D1117;
+    background-color:  white;
+    border-color: 2px solid #0D1117 ;
+    /* display: inline-block; */
+
+}
+button {
+    background-color: #4CAF50;
+    width: 117px;
+    color: white;
+    border-color: 2px solid black ;
+    padding: 10px 20px;
+    margin: 10px 2pX 5pX 2px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin-right: 10px; */
+}
+
+button:hover {
+    width: 117px;
+    color: white;
+    background-color: #0D1117;
+    opacity: 1;
+    box-shadow: 1px 8px 15px rgba(242, 237, 237, 0.31);  
+    /* border: 1px solid white; */
+}
+/* .but1{
+    display: flex;
+    justify-content: space-between;
+} */
+
+
+
+/* button:active {
+    background-color: green;
+} */
+
+
+.footer {
+    /* background-color: var(--secondary-color); */
+    padding: 20px;
+    font-size: 15px;
+    color: var(--text-color);
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 9px;
+}
+
+.copy img {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+    margin: 3px;
+}
+
+.copy span {
+    text-align: justify;
+
+
+};
+
+
+

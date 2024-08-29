@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <title>Codelink</title>
+    <link rel="icon" href="./asset/code.png" type="image/icon type">
+    <link rel="stylesheet" href="./styles/workaea.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="container">
+            <div class="box-item1">
+                <a href="">
+                    <img src="./asset/code.png" alt=""></a>
+                  <a href="">  <span>Codelink</span></a>
+            </div>
+            <div class="box-item2">
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a> </li>
+                    <li> <a href="login.html" target="_blank">Login</a></li>
+                    <li><a href="sign.html" target="_blank"> Sign up</a></li>
+                    
+                </ul>
+            </div>
+            <div class="box-item3">
+                <input type="text" placeholder="Search...">
+            </div>
+            <!-- <div class="box-item4">
+                <a href="profile1.html">
+                    <img src="./asset/profile.jpg" alt="">
+                </a>
+            </div> -->
+
+        </nav>
+    </header>
+    <main>
+        <div class=" head">
+            <p> Instantly share code, notes, and snippets.</p>
+        </div>
+        
+
+        <div class="text1">
+            <input type="text" placeholder="Gist description..." id="gistDescription">
+            <input type="text" placeholder="Filename including extension..." id="fileName">
+            <div class="code-container" style="display: flex;">
+                <div class="line-numbers Scroll1" id="lineNumbers"></div>
+                <textarea class="Scroll1" id="codeArea" wrap="off"></textarea>
+            </div>
+            <div class="but1" >
+                <button id="addFileButton" class="buta">Add File</button>
+                <button id="createGistButton" class="buta1">Create Code</button>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="copy">
+                <img src="./asset/code.png" alt="GitHub" class="github-icon">
+            </div>
+            <div class="text">&copy; 2024 Codelink.</div>
+            <a href=""> About</a>
+            <a href=""> Contact us</a>
+           
+
+
+        </div>
+
+    </footer>
+    <script>
+        const codeArea = document.getElementById('codeArea');
+        const lineNumbers = document.getElementById('lineNumbers');
+
+        codeArea.addEventListener('input', updateLineNumbers);
+
+        function updateLineNumbers() {
+            const lines = codeArea.value.split('\n');
+            lineNumbers.innerHTML = '';
+
+            for (let i = 1; i <= lines.length; i++) {
+                const lineNumber = document.createElement('div');
+                lineNumber.textContent = i;
+                lineNumbers.appendChild(lineNumber);
+            }
+
+            // Sync scroll positions
+            lineNumbers.scrollTop = codeArea.scrollTop;
+        }
+
+        updateLineNumbers(); // Initial line numbers
+        const box1 = document.getElementById('lineNumbers');
+        const box2 = document.getElementById('codeArea');
+
+        box1.addEventListener('scroll', () => {
+            box2.scrollTop = box1.scrollTop;
+            box2.scrollLeft = box1.scrollLeft;
+        });
+
+        box2.addEventListener('scroll', () => {
+            box1.scrollTop = box2.scrollTop;
+            box1.scrollLeft = box2.scrollLeft;
+        });
+    </script>
+</body>
+
+</html>

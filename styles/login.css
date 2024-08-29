@@ -1,0 +1,122 @@
+body {
+    background-color: #0D1117;
+    color: #eee;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: #181b20;
+    width: 25vw;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 8px 15px rgba(242, 237, 237, 0.2);
+    
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    opacity: 1;
+  }
+  
+  a {
+    color: #656ff7;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .forgot-password {
+    float: right;
+    margin-top: -25px;
+    margin: 1px;
+  }
+  
+  
+  
+  .new-to-github {
+    margin-top: 10px;
+  }
+  
+  .octocat {
+      display: flex;
+      margin: auto;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 55px;
+  }
+  @media (max-width: 768px) {
+        .container {
+          width: 90%;
+          padding: 20px;
+        }
+  
+        .octocat {
+          width: 80px;
+          height: 80px;
+        }
+  
+        button {
+          padding: 12px 15px;
+        }
+  
+        input[type="text"],
+        input[type="password"] {
+          padding: 10px;
+        }
+      }
+  
+      @media (max-width: 480px) {
+        .container {
+          width: 95%;
+          padding: 15px;
+        }
+  
+        .octocat {
+          width: 60px;
+          height: 60px;
+        }
+  
+        button {
+          padding: 10px 12px;
+        }
+  
+        input[type="text"],
+        input[type="password"] {
+          padding: 8px;
+        }
+      }
